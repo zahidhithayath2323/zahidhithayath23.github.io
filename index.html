@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H. Zahid | Portfolio</title>
+<meta name="description" content="Portfolio of H. Zahid, B.Tech Computer Science and Business Systems student.">
+<style>
+:root{--bg:#0a0f1c;--card:#111827;--text:#f8fafc;--muted:#a7b0c0;--accent:#7c5cff;--accent2:#00d4ff;--line:#243047}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 80% 10%,#1c1b4a 0,transparent 30%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(10,15,28,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px}.logo span{color:var(--accent2)}
+.nav-links{display:flex;gap:24px;color:#cbd5e1;font-size:14px}
+.nav-links a:hover{color:white}
+.hero{min-height:100vh;display:flex;align-items:center;max-width:1100px;margin:auto;padding:120px 22px 70px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center;width:100%}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #33415f;border-radius:999px;color:#b9c6e2;background:#10182a;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(46px,8vw,84px);line-height:.98;letter-spacing:-3px}
+.gradient{background:linear-gradient(90deg,#fff,var(--accent2),#a98bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:24px 0;color:var(--muted);font-size:18px;max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:14px}
+.primary{background:linear-gradient(135deg,var(--accent),#4f8cff);border:0}
+.secondary{background:#101827}
+.profile-card{background:linear-gradient(145deg,#171f35,#0e1423);border:1px solid var(--line);border-radius:28px;padding:35px;text-align:center;box-shadow:0 25px 70px rgba(0,0,0,.35)}
+.avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;font-size:48px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white}
+.profile-card h2{font-size:25px}.profile-card p{font-size:14px;margin:7px auto;color:var(--muted)}
+section{max-width:1100px;margin:auto;padding:90px 22px}
+.section-label{color:var(--accent2);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+h2.section-title{font-size:38px;margin:8px 0 35px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.card{background:rgba(17,24,39,.72);border:1px solid var(--line);border-radius:20px;padding:28px}
+.card p{color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:10px 15px;border-radius:10px;background:#151e31;border:1px solid #2b3852}
+.project{display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start}
+.project-icon{width:90px;height:90px;border-radius:18px;display:grid;place-items:center;font-size:35px;background:linear-gradient(135deg,#252052,#12344b)}
+.project h3{font-size:24px;margin-bottom:8px}
+.project p{color:var(--muted)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.tag{font-size:12px;padding:6px 10px;border:1px solid #33415b;border-radius:999px;color:#c7d2e5}
+.contact{text-align:center;background:linear-gradient(145deg,#121a2b,#0c1220);border:1px solid var(--line);border-radius:28px;padding:55px 25px}
+.contact p{color:var(--muted);margin:10px auto 25px}
+footer{padding:35px 22px;text-align:center;color:#738098;font-size:13px;border-top:1px solid rgba(255,255,255,.05)}
+@media(max-width:800px){.hero-grid,.about{grid-template-columns:1fr}.profile-card{max-width:420px;margin:auto}.nav-links{display:none}h1{letter-spacing:-2px}.project{grid-template-columns:1fr}.project-icon{width:70px;height:70px}}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner">
+<a class="logo" href="#home">H.<span>Zahid</span></a>
+<div class="nav-links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div>
+</div></nav>
+
+<main id="home">
+<section class="hero">
+<div class="hero-grid">
+<div>
+<span class="badge">B.Tech • Computer Science & Business Systems</span>
+<h1>Hi, I'm <span class="gradient">H. Zahid.</span></h1>
+<p>A passionate CSBS student who enjoys building practical technology projects and exploring Python, computer vision and software development.</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">View My Project</a>
+<a class="btn secondary" href="mailto:zahidhithayath@gmail.com">Contact Me</a>
+</div>
+</div>
+<div class="profile-card">
+<div class="avatar">HZ</div>
+<h2>H. Zahid</h2>
+<p>Aalim Muhammed Salegh College Of Engineering</p>
+<p>B.Tech — Computer Science & Business Systems</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<span class="section-label">About Me</span>
+<h2 class="section-title">A student who likes to build.</h2>
+<div class="about">
+<div class="card"><p>I am H. Zahid, a B.Tech student specializing in Computer Science and Business Systems. I am interested in software development and using technology to create useful, real-world solutions.</p></div>
+<div class="card"><p>One of my projects involved creating a camera-based computer cursor system with a team of three members. The project explored how a computer camera can be used as an input device.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<span class="section-label">Skills</span>
+<h2 class="section-title">Technologies I work with.</h2>
+<div class="card"><div class="skills"><span class="skill">Python</span><span class="skill">Computer Vision</span><span class="skill">Problem Solving</span><span class="skill">Team Collaboration</span></div></div>
+</section>
+
+<section id="projects">
+<span class="section-label">Featured Project</span>
+<h2 class="section-title">What I've built.</h2>
+<div class="card project">
+<div class="project-icon">🖱️</div>
+<div>
+<h3>Camera-Based Cursor Control</h3>
+<p>A team project that uses a laptop or computer camera to control the cursor. The project explores camera-based interaction and aims to provide an alternative way of interacting with a computer without relying only on a physical mouse.</p>
+<div class="meta"><span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">Team of 4</span></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<span class="section-label">Get In Touch</span>
+<h2 class="section-title">Let's connect.</h2>
+<p>I'm open to internship opportunities, project collaborations and learning experiences.</p>
+<div class="buttons" style="justify-content:center">
+<a class="btn primary" href="mailto:zahidhithayath@gmail.com">Email Me</a>
+<a class="btn secondary" href="https://www.linkedin.com/in/zahid-hithayath-184235348/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn secondary" href="https://github.com/zahidhithayath2323" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</section>
+</main>
+<footer>© 2026 H. Zahid. Built with HTML & CSS.</footer>
+</body>
+</html>
